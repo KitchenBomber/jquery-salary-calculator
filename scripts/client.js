@@ -3,6 +3,13 @@ $(document).ready(onReady);
 function onReady() {
     console.log("jquery reporting for duty");
     $('#employeeSubmit').on('click', addEmployee);
+    //the button for adding data
+    $('#employeeDisplay').on('click', '.deleteRow', function(){
+        $(this).closest('tr').remove();
+    })
+    //the button to remove rows
+
+    
 }
 let employeeInfo = [];
 
@@ -35,6 +42,7 @@ function addEmployee() {
 }
 
 function calculateMonthlyExpense(){
+    console.log("in calculateMonthlyExpense");
     
 }
-]
+
