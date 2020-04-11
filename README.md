@@ -2,9 +2,9 @@
 Alan's Awesome Salary Calculator
 
 ## Description
-		[] Create inputs that take employee info
-		[] Create submit button that takes inputs and adds an object to an array.
-		[] Append information from array to table on DOM
+		[x] Create inputs that take employee info
+		[x] Create submit button that takes inputs and adds an object to an array.
+		[x] Append information from array to table on DOM
 		[] Scan list of objects to retrieve their salary
 		[] Divide salary by 12 and display to DOM
 		[] Make display field turn read if value exceeded 

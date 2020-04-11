@@ -5,13 +5,6 @@ function onReady() {
     $('#employeeSubmit').on('click', addEmployee);
 }
 let employeeInfo = [];
-// let employeeObjectToAdd = {
-//     firstName: $('#firstNameIn').val,
-//     lastName: $('#lastNameIn').val,
-//     idNumber: $('#idNumberIn').val,
-//     jobTitle: $('#jobTitleIn').val,
-//     annualSalary: $('#annSalIn').val,
-// }
 
 function addEmployee() {
     console.log('in employeeObjectToAdd');
@@ -23,7 +16,7 @@ function addEmployee() {
         annualSalary: $('#annSalIn').val(),
     }
     console.log(employeeObjectToAdd);
-    
+
     employeeInfo.push(employeeObjectToAdd);
     console.log(employeeInfo);
     $('#firstNameIn').val('');
@@ -31,6 +24,17 @@ function addEmployee() {
     $('#idNumberIn').val('');
     $('#jobTitleIn').val('');
     $('#annSalIn').val('');
-    $('#employeeDisplay').append('<td>')
+    $('#employeeDisplay').append(`<tr>
+        <td> ${employeeObjectToAdd.firstName} </td>
+        <td> ${employeeObjectToAdd.lastName} </td>
+        <td> ${employeeObjectToAdd.idNumber} </td>
+        <td> ${employeeObjectToAdd.jobTitle} </td>
+        <td class=yearlyMoney> ${employeeObjectToAdd.annualSalary} </td>
+        <td><button class=deleteRow>Remove</button></td>
+        </tr>`)
 }
 
+function calculateMonthlyExpense(){
+    
+}
+]
