@@ -6,7 +6,7 @@ This application allows a user to enter employees annual salaries and gives a st
 
 User inputs as much of the employees' identifying information as desired along with salary.
 This information is placed in an array and seperately into a table on the DOM.
-![Enter Employee Data](initial.png)
+![Enter Employee Data](first.png)
 
 The entered information is displayed on the page along with the total monthly expense of all entered employees. Individual lines can be removed as desired through the use of buttons on the DOM.
 ![Display Employee Data](intermediate.png)
