@@ -12,31 +12,44 @@
 </head>
 
 <body class='container'>
-    <header class='jumbotron'>
+    <header id=pageName class='jumbotron'>
         <h1>Salary Expense Calculator</h1>
     </header>
     <div id=theWholeShebang>
         <h3>Add Employee:</h3>
         <div class=interface style=>
-            <input type='text' id='firstNameIn' placeholder="First Name">
-            <input type='text' id='lastNameIn' placeholder="Last Name">
-            <input type='text' id='idNumberIn' placeholder="ID Number">
-            <input type='text' id='jobTitleIn' placeholder="Job Title">
-            <input type="text" id="annSalIn" placeholder="Annual Salary">
-            <button id=employeeSubmit>Submit</button>
+            <table></table>
+            <td><input type='text' id='firstNameIn' placeholder="First Name"></td>
+            <td></td><input type='text' id='lastNameIn' placeholder="Last Name"></td>
+            <td></td><input type='text' id='idNumberIn' placeholder="ID Number"></td>
+            <td></td><input type='text' id='jobTitleIn' placeholder="Job Title"></td>
+            <td></td><input type="text" id="annSalIn" placeholder="Annual Salary"></td>
+            <td></td><button id=employeeSubmit>Submit</button></td>
+            </table>
         </div>
         <h3>Employees:</h3>
         <table id=employeeDisplay class="table-striped table-bordered table-hover" style="width:100%">
-            <tr>
+            <thead class=tableEdge>
                 <th>First Name:</th>
                 <th>Last Name:</th>
                 <th>ID Number:</th>
                 <th>Job Title:</th>
                 <th>Annual Salary:</th>
                 <th>Remove Employee</th>
-            </tr>
+            </thead>
+            <tbody id=employeeDisplay>
+                <!-- employees to appear here -->
+            </tbody>
+            <tfoot id=tableFooter class=tableEdge>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total Monthly Expense:</td>
+                <td><span id=totalOutSpan></span></td>
+                <td></td>
+            </tfoot>
         </table>
-        <div id=totalOut>Total Monthly Expense:<span id=totalOutSpan></span></div>
+        <!-- <div id=totalOut>Total Monthly Expense:<span id=totalOutSpan></span></div> -->
     </div>
     <!-- end inputs for _employee first name, last name, ID number, job title, annual salary_ -->
 </body>

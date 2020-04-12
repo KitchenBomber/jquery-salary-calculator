@@ -1,7 +1,38 @@
+
+
+#employeeSubmit{
+    text-align: right;
+}
+input{
+    background-color: rgb(165, 199, 240);
+}
+
 .overBudget {
     background-color: red;
 }
+#pageName{
+    color: white;
+    width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(165, 199, 240);
+}
+::placeholder{
+    color: white;
+}
+.tableEdge{
+    background-color: rgb(165, 199, 240);
+}
 
+#theWholeShebang{
+    width: 1200px;
+  border: 2px solid darkblue;
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 #totalOut {
     text-align: right;
 }
+
+
