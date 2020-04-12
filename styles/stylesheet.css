@@ -1,3 +1,7 @@
 .overBudget {
     background-color: red;
 }
+
+#totalOut {
+    text-align: right;
+}

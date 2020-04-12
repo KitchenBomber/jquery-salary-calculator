@@ -52,7 +52,7 @@ function calculateMonthlyExpense(arrayIn) {
     console.log('totalSalaries =', totalSalaries);
     monthlyExpense = totalSalaries / 12;
     $('#totalOutSpan').empty();
-    $('#totalOutSpan').append(monthlyExpense);
+    $('#totalOutSpan').append(parseInt(monthlyExpense));
     if (monthlyExpense > 20000){
         console.log('you went over budget');
         $('#totalOutSpan').addClass('overBudget');
