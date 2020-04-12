@@ -7,9 +7,9 @@ Alan's Awesome Salary Calculator
 		[x] Append information from array to table on DOM
 		[] Scan list of objects to retrieve their salary
 		[] Divide salary by 12 and display to DOM
-		[] Make display field turn read if value exceeded 
+		[] Make display field turn red if value exceeded 
 			§ (possibly a boolean if or an if that triggers, if greater than … else nothing)
-		[] Create a method to delete in the table
+		[x] Create a method to delete in the table
         [] update read me and include screenshots
     
 Have delete rerun clear and then rerun the calculation or monthly salary

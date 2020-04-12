@@ -15,26 +15,28 @@
     <header class='jumbotron'>
         <h1>Salary Expense Calculator</h1>
     </header>
-    <div class=interface style=>
-    <input type='text' id='firstNameIn' placeholder="First Name">
-    <input type='text' id='lastNameIn' placeholder="Last Name">
-    <input type='text' id='idNumberIn' placeholder="ID Number">
-    <input type='text' id='jobTitleIn' placeholder="Job Title">
-    <input type="text" id="annSalIn" placeholder="Annual Salary">
-    <button id=employeeSubmit>Submit</button>
+    <div id=theWholeShebang>
+        <div class=interface style=>
+            <input type='text' id='firstNameIn' placeholder="First Name">
+            <input type='text' id='lastNameIn' placeholder="Last Name">
+            <input type='text' id='idNumberIn' placeholder="ID Number">
+            <input type='text' id='jobTitleIn' placeholder="Job Title">
+            <input type="text" id="annSalIn" placeholder="Annual Salary">
+            <button id=employeeSubmit>Submit</button>
+        </div>
+        <table id=employeeDisplay class="table-striped" style="width:100%">
+            <tr>
+                <th>First Name:</th>
+                <th>Last Name:</th>
+                <th>ID Number:</th>
+                <th>Job Title:</th>
+                <th>Annual Salary:</th>
+                <th>Remove Employee</th>
+            </tr>
+        </table>
+        <div id=totalOut>Total Monthly Expense:<span id=totalOutSpan></span></div>
     </div>
-    <table id=employeeDisplay class="table-striped" style="width:100%">
-        <tr>
-            <th>First Name:</th>
-            <th>Last Name:</th>
-            <th>ID Number:</th>
-            <th>Job Title:</th>
-            <th>Annual Salary:</th>
-            <th>Remove Employee</th>
-        </tr>
-    </table>
-    <output id=totalOut>Total Monthly Expense:</output>
-<!-- end inputs for _employee first name, last name, ID number, job title, annual salary_ -->
+    <!-- end inputs for _employee first name, last name, ID number, job title, annual salary_ -->
 </body>
 
 </html>
