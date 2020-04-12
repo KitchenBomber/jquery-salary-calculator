@@ -14,7 +14,7 @@ function onReady() {
 }
 let employeeInfo = [];
 
-
+// this function takes the inputs, puts them into an array of objects, pushes that to a table in the DOM and then calls a function to calculate monthly expense
 function addEmployee() {
     console.log('in addEmployee');
     let employeeObjectToAdd = {
@@ -42,7 +42,7 @@ function addEmployee() {
         </tr>`);
     calculateMonthlyExpense(employeeInfo);
 }
-
+// calculate monthly will be triggered each time an employee is added
 function calculateMonthlyExpense(arrayIn) {
     let totalSalaries = 0;
     console.log('in calculateMonthlyExpense');
@@ -53,48 +53,11 @@ function calculateMonthlyExpense(arrayIn) {
     monthlyExpense = totalSalaries / 12;
     $('#totalOutSpan').empty();
     $('#totalOutSpan').append(monthlyExpense);
+    if (monthlyExpense > 20000){
+        console.log('you went over budget');
+        $('#totalOutSpan').addClass('overBudget');
+    }
 }
-    // let totalMonthly
-    // 
-    // let totalSalaries = [];
-    // employeeInfo.forEach(employeeInfo.annualSalary){
-    //     totalSalaries.push(Number(annualSalary));
-    //     console.log(totalSalaries);
-    // };
-    // let empoloyeeSalary = 
-    // totalSalaries.push($('#employeeDisplay').find('td.yearlyMoney').html);
-    // console.log(totalSalaries);
 
-    // $('#totalOutSpan').append($('#employeeDisplay').get('td.yearlyMoney'));
-    // console.log("the monthly expense is", totalYearlyMoney / 12);
-
-
-
-    // let el = $('totalOut');
-    // el.empty();
-
-    // console.log("in calculateMonthlyExpense");
-    // let totalYearlyMoney = 0;
-    // let monthlyExpense = totalYearlyMoney / 12;
-    // $('#employeeDisplay td').each(function(){
-    //     let newExpense = $(this).find('.yearlyMoney').html;
-    //     totalYearlyMoney += newExpense;
-    // });
-    // console.log("the monthly expense is", monthlyExpense);
-    // $('#totalOut').append('Total Monthly Expense:', monthlyExpense);
-//     console.log("in calculateMonthlyExpense");
-// $(.yearlyMoney).each(function(){calculateSum})
-
-
-//     $('#totalOut').empty();
-//     let monthlyExpense = 0;
-//     for (const rowValue of $('#employeeDisplay') {
-
-//         monthlyExpense += rowValue;
-//         monthlyExpense += $('#theWholeShebang').find(td.yearlyMoney)
-//     }
-
-//     monthlyExpense / 12;
-//     $('#totalOut').append(monthlyExpense)
 
 

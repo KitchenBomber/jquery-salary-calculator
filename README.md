@@ -5,9 +5,9 @@ Alan's Awesome Salary Calculator
 		[x] Create inputs that take employee info
 		[x] Create submit button that takes inputs and adds an object to an array.
 		[x] Append information from array to table on DOM
-		[] Scan list of objects to retrieve their salary
-		[] Divide salary by 12 and display to DOM
-		[] Make display field turn red if value exceeded 
+		[x] Scan list of objects to retrieve their salary
+		[x] Divide salary by 12 and display to DOM
+		[x] Make display field turn red if value exceeded 
 			§ (possibly a boolean if or an if that triggers, if greater than … else nothing)
 		[x] Create a method to delete in the table
         [] update read me and include screenshots
